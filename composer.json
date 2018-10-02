@@ -1,0 +1,18 @@
+{
+    "name": "esemve/wordpress_honeypot",
+    "description": "A simple honeypot",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "esemve",
+            "email": "esemve@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/"
+        }
+    }
+}
