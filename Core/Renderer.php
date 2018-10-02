@@ -31,7 +31,7 @@ class Renderer
             throw new \Exception('Bad format of urlToTemplate config!');
         }
 
-        $this->baseUrl = '//'.$_SERVER['SERVER_NAME'].':8081';
+        $this->baseUrl = '//'.$_SERVER['SERVER_NAME'];
     }
 
     public function hasTemplate(Request $request): bool
