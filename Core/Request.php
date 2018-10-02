@@ -29,7 +29,7 @@ class Request
     {
         $this->ip = $_SERVER['REMOTE_ADDR'];
         $this->method = $_SERVER['REQUEST_METHOD'];
-        $this->uri = trim('/',trim($_SERVER['REQUEST_URI']));
+        $this->uri = trim(trim($_SERVER['REQUEST_URI']),'/');
         $this->query = $_SERVER['QUERY_STRING'] ?? null;
 
         if ($this->uri==='') {

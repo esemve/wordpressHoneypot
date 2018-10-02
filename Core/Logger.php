@@ -17,7 +17,9 @@ class Logger implements LoggerInterface
 
     public function log(string $ip): void
     {
-        $this->logger->log($ip);
+        if ($ip!=='127.0.0.1') {
+            $this->logger->log($ip);
+        }
     }
 
 }

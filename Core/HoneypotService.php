@@ -29,8 +29,12 @@ class HoneypotService
     }
 
     protected function ban(Request $request) {
+        if ($request->getIp()==='127.0.0.1') {
+            die('Hit, but not logged because you watch from localhost!');
+        }
+
         $this->logger->log($request->getIp());
-        die('Banned');
+        die('You are banned!');
     }
 
 }

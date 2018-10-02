@@ -9,21 +9,10 @@ class Template
      * @var string
      */
     private $file;
-    /**
-     * @var string
-     */
-    private $header;
 
-    public function __construct(string $file, string $header)
+    public function __construct(string $file)
     {
-
         $this->file = $file;
-        $this->header = $header;
-    }
-
-    public function getHeader(): string
-    {
-        return $this->header;
     }
 
     public function getFile(): string
